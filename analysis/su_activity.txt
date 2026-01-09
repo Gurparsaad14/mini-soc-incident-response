@@ -1,0 +1,27 @@
+17:2026-01-09T09:06:07.599189+00:00 Ubuntu login[973]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+22:2026-01-09T09:06:17.442886+00:00 Ubuntu sudo: gurparsaad : TTY=tty1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/apt update
+23:2026-01-09T09:06:17.443853+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+24:2026-01-09T09:06:19.773935+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+25:2026-01-09T09:06:50.482142+00:00 Ubuntu sudo: gurparsaad : TTY=tty1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/apt -y install openssh-server git sqlite3 python3
+26:2026-01-09T09:06:50.483040+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+28:2026-01-09T09:06:58.898779+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+29:2026-01-09T09:07:12.389847+00:00 Ubuntu sudo: gurparsaad : TTY=tty1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/systemctl enable --now ssh
+30:2026-01-09T09:07:12.390386+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+33:2026-01-09T09:07:13.015436+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+44:2026-01-09T09:09:41.689996+00:00 Ubuntu login[838]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+59:2026-01-09T09:19:59.391109+00:00 Ubuntu sudo: gurparsaad : TTY=pts/1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+60:2026-01-09T09:19:59.392437+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+93:2026-01-09T09:25:31.125655+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/sbin/useradd fakeuser
+94:2026-01-09T09:25:31.133518+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+97:2026-01-09T09:25:31.206416+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+98:2026-01-09T09:25:38.249286+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/passwd fakeuser
+99:2026-01-09T09:25:38.250029+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+101:2026-01-09T09:25:47.225080+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+102:2026-01-09T09:26:13.606240+00:00 Ubuntu su: pam_unix(su:auth): authentication failure; logname=gurparsaad uid=1000 euid=0 tty=/dev/pts/0 ruser=gurparsaad rhost=  user=fakeuser
+103:2026-01-09T09:26:17.044660+00:00 Ubuntu su[1204]: FAILED SU (to fakeuser) gurparsaad on pts/0
+104:2026-01-09T09:26:36.023583+00:00 Ubuntu su: pam_unix(su:auth): authentication failure; logname=gurparsaad uid=1000 euid=0 tty=/dev/pts/0 ruser=gurparsaad rhost=  user=fakeuser
+105:2026-01-09T09:26:39.298757+00:00 Ubuntu su[1205]: FAILED SU (to fakeuser) gurparsaad on pts/0
+106:2026-01-09T09:27:29.444563+00:00 Ubuntu sudo: pam_unix(sudo:auth): authentication failure; logname=gurparsaad uid=1000 euid=0 tty=/dev/pts/0 ruser=gurparsaad rhost=  user=gurparsaad
+107:2026-01-09T09:27:50.815589+00:00 Ubuntu sudo: gurparsaad : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/ls /root
+108:2026-01-09T09:28:07.635495+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log raw_logs/auth.log
+109:2026-01-09T09:28:07.636481+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)

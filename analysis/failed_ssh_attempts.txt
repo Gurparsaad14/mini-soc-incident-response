@@ -1,0 +1,9 @@
+64:2026-01-09T09:21:25.772265+00:00 Ubuntu sshd[1174]: Failed password for invalid user fakeuser from ::1 port 53406 ssh2
+66:2026-01-09T09:21:29.888500+00:00 Ubuntu sshd[1174]: Failed password for invalid user fakeuser from ::1 port 53406 ssh2
+68:2026-01-09T09:21:34.702088+00:00 Ubuntu sshd[1174]: Failed password for invalid user fakeuser from ::1 port 53406 ssh2
+74:2026-01-09T09:21:49.574501+00:00 Ubuntu sshd[1177]: Failed password for invalid user fakeuser from ::1 port 47096 ssh2
+76:2026-01-09T09:21:58.737543+00:00 Ubuntu sshd[1177]: Failed password for invalid user fakeuser from ::1 port 47096 ssh2
+78:2026-01-09T09:22:03.295333+00:00 Ubuntu sshd[1177]: Failed password for invalid user fakeuser from ::1 port 47096 ssh2
+84:2026-01-09T09:22:11.158356+00:00 Ubuntu sshd[1180]: Failed password for invalid user fakeuser from ::1 port 50552 ssh2
+86:2026-01-09T09:22:16.525196+00:00 Ubuntu sshd[1180]: Failed password for invalid user fakeuser from ::1 port 50552 ssh2
+88:2026-01-09T09:22:20.190499+00:00 Ubuntu sshd[1180]: Failed password for invalid user fakeuser from ::1 port 50552 ssh2
