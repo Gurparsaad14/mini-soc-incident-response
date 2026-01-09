@@ -66,3 +66,45 @@
 2026-01-09T09:27:50.815589+00:00 Ubuntu sudo: 2026-01-09T09:27:50.815589+00:00 Ubuntu sudo: gurparsaad : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/ls /root
 2026-01-09T09:28:07.635495+00:00 Ubuntu sudo: 2026-01-09T09:28:07.635495+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log raw_logs/auth.log
 2026-01-09T09:28:07.636481+00:00 Ubuntu sudo: 2026-01-09T09:28:07.636481+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:28:07.642920+00:00 Ubuntu sudo: 2026-01-09T09:28:07.642920+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:28:07.649404+00:00 Ubuntu sudo: 2026-01-09T09:28:07.649404+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/cp /var/log/syslog raw_logs/syslog.log
+2026-01-09T09:28:07.649963+00:00 Ubuntu sudo: 2026-01-09T09:28:07.649963+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:28:07.658710+00:00 Ubuntu sudo: 2026-01-09T09:28:07.658710+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:28:07.665619+00:00 Ubuntu sudo: 2026-01-09T09:28:07.665619+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/chown gurparsaad:gurparsaad raw_logs/auth.log raw_logs/syslog.log
+2026-01-09T09:28:07.666507+00:00 Ubuntu sudo: 2026-01-09T09:28:07.666507+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:28:07.669960+00:00 Ubuntu sudo: 2026-01-09T09:28:07.669960+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:40:04.751600+00:00 Ubuntu sshd[1281]: 2026-01-09T09:40:04.751600+00:00 Ubuntu sshd[1281]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:40:06.715573+00:00 Ubuntu sshd[1281]: 2026-01-09T09:40:06.715573+00:00 Ubuntu sshd[1281]: Failed password for fakeuser from ::1 port 55914 ssh2
+2026-01-09T09:40:19.221807+00:00 Ubuntu sshd[1281]: 2026-01-09T09:40:19.221807+00:00 Ubuntu sshd[1281]: message repeated 2 times: [ Failed password for fakeuser from ::1 port 55914 ssh2]
+2026-01-09T09:40:19.753661+00:00 Ubuntu sshd[1281]: 2026-01-09T09:40:19.753661+00:00 Ubuntu sshd[1281]: Connection closed by authenticating user fakeuser ::1 port 55914 [preauth]
+2026-01-09T09:40:19.762879+00:00 Ubuntu sshd[1281]: 2026-01-09T09:40:19.762879+00:00 Ubuntu sshd[1281]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:40:22.555608+00:00 Ubuntu sshd[1290]: 2026-01-09T09:40:22.555608+00:00 Ubuntu sshd[1290]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:40:24.764834+00:00 Ubuntu sshd[1290]: 2026-01-09T09:40:24.764834+00:00 Ubuntu sshd[1290]: Failed password for fakeuser from ::1 port 43912 ssh2
+2026-01-09T09:40:35.122663+00:00 Ubuntu sshd[1290]: 2026-01-09T09:40:35.122663+00:00 Ubuntu sshd[1290]: message repeated 2 times: [ Failed password for fakeuser from ::1 port 43912 ssh2]
+2026-01-09T09:40:35.821952+00:00 Ubuntu sshd[1290]: 2026-01-09T09:40:35.821952+00:00 Ubuntu sshd[1290]: Connection closed by authenticating user fakeuser ::1 port 43912 [preauth]
+2026-01-09T09:40:35.822630+00:00 Ubuntu sshd[1290]: 2026-01-09T09:40:35.822630+00:00 Ubuntu sshd[1290]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:40:37.741110+00:00 Ubuntu sshd[1294]: 2026-01-09T09:40:37.741110+00:00 Ubuntu sshd[1294]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:40:39.699664+00:00 Ubuntu sshd[1294]: 2026-01-09T09:40:39.699664+00:00 Ubuntu sshd[1294]: Failed password for fakeuser from ::1 port 34838 ssh2
+2026-01-09T09:40:49.262656+00:00 Ubuntu sshd[1294]: 2026-01-09T09:40:49.262656+00:00 Ubuntu sshd[1294]: message repeated 2 times: [ Failed password for fakeuser from ::1 port 34838 ssh2]
+2026-01-09T09:40:50.225709+00:00 Ubuntu sshd[1294]: 2026-01-09T09:40:50.225709+00:00 Ubuntu sshd[1294]: Connection closed by authenticating user fakeuser ::1 port 34838 [preauth]
+2026-01-09T09:40:50.229667+00:00 Ubuntu sshd[1294]: 2026-01-09T09:40:50.229667+00:00 Ubuntu sshd[1294]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:03.561739+00:00 Ubuntu sshd[1297]: 2026-01-09T09:41:03.561739+00:00 Ubuntu sshd[1297]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:05.796402+00:00 Ubuntu sshd[1297]: 2026-01-09T09:41:05.796402+00:00 Ubuntu sshd[1297]: Failed password for fakeuser from ::1 port 35056 ssh2
+2026-01-09T09:41:16.875515+00:00 Ubuntu sshd[1297]: 2026-01-09T09:41:16.875515+00:00 Ubuntu sshd[1297]: message repeated 2 times: [ Failed password for fakeuser from ::1 port 35056 ssh2]
+2026-01-09T09:41:17.749805+00:00 Ubuntu sshd[1297]: 2026-01-09T09:41:17.749805+00:00 Ubuntu sshd[1297]: Connection closed by authenticating user fakeuser ::1 port 35056 [preauth]
+2026-01-09T09:41:17.752804+00:00 Ubuntu sshd[1297]: 2026-01-09T09:41:17.752804+00:00 Ubuntu sshd[1297]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:19.606994+00:00 Ubuntu sshd[1301]: 2026-01-09T09:41:19.606994+00:00 Ubuntu sshd[1301]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:22.000413+00:00 Ubuntu sshd[1301]: 2026-01-09T09:41:22.000413+00:00 Ubuntu sshd[1301]: Failed password for fakeuser from ::1 port 44962 ssh2
+2026-01-09T09:41:34.007773+00:00 Ubuntu sshd[1301]: 2026-01-09T09:41:34.007773+00:00 Ubuntu sshd[1301]: message repeated 2 times: [ Failed password for fakeuser from ::1 port 44962 ssh2]
+2026-01-09T09:41:34.603827+00:00 Ubuntu sshd[1301]: 2026-01-09T09:41:34.603827+00:00 Ubuntu sshd[1301]: Connection closed by authenticating user fakeuser ::1 port 44962 [preauth]
+2026-01-09T09:41:34.604590+00:00 Ubuntu sshd[1301]: 2026-01-09T09:41:34.604590+00:00 Ubuntu sshd[1301]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:36.475238+00:00 Ubuntu sshd[1304]: 2026-01-09T09:41:36.475238+00:00 Ubuntu sshd[1304]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:38.623001+00:00 Ubuntu sshd[1304]: 2026-01-09T09:41:38.623001+00:00 Ubuntu sshd[1304]: Failed password for fakeuser from ::1 port 56756 ssh2
+2026-01-09T09:41:52.442817+00:00 Ubuntu sshd[1304]: 2026-01-09T09:41:52.442817+00:00 Ubuntu sshd[1304]: message repeated 2 times: [ Failed password for fakeuser from ::1 port 56756 ssh2]
+2026-01-09T09:41:52.449086+00:00 Ubuntu sshd[1304]: 2026-01-09T09:41:52.449086+00:00 Ubuntu sshd[1304]: Connection closed by authenticating user fakeuser ::1 port 56756 [preauth]
+2026-01-09T09:41:52.449130+00:00 Ubuntu sshd[1304]: 2026-01-09T09:41:52.449130+00:00 Ubuntu sshd[1304]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1  user=fakeuser
+2026-01-09T09:41:54.741643+00:00 Ubuntu sudo: 2026-01-09T09:41:54.741643+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/grep -n 'Failed password' /var/log/auth.log
+2026-01-09T09:41:54.747383+00:00 Ubuntu sudo: 2026-01-09T09:41:54.747383+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:41:54.747527+00:00 Ubuntu sudo: 2026-01-09T09:41:54.747527+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:42:05.108235+00:00 Ubuntu sudo: 2026-01-09T09:42:05.108235+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log raw_logs/auth.log
+2026-01-09T09:42:05.109852+00:00 Ubuntu sudo: 2026-01-09T09:42:05.109852+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)

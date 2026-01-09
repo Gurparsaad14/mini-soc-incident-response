@@ -1,0 +1,38 @@
+total_rows
+----------
+153       
+failed_ssh
+----------
+22        
+message                                                       hits
+------------------------------------------------------------  ----
+Failed password for invalid user fakeuser from ::1 port 5340  3   
+6 ssh2                                                            
+
+Failed password for invalid user fakeuser from ::1 port 5055  3   
+2 ssh2                                                            
+
+Failed password for invalid user fakeuser from ::1 port 4709  3   
+6 ssh2                                                            
+
+message repeated 2 times: [ Failed password for fakeuser fro  1   
+m ::1 port 56756 ssh2]                                            
+
+message repeated 2 times: [ Failed password for fakeuser fro  1   
+m ::1 port 55914 ssh2]                                            
+
+message repeated 2 times: [ Failed password for fakeuser fro  1   
+m ::1 port 44962 ssh2]                                            
+
+message repeated 2 times: [ Failed password for fakeuser fro  1   
+m ::1 port 43912 ssh2]                                            
+
+message repeated 2 times: [ Failed password for fakeuser fro  1   
+m ::1 port 35056 ssh2]                                            
+
+message repeated 2 times: [ Failed password for fakeuser fro  1   
+m ::1 port 34838 ssh2]                                            
+
+gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incid  1   
+ent-response ; USER=root ; COMMAND=/usr/bin/grep -n 'Failed       
+password' /var/log/auth.log                                       
