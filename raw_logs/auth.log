@@ -1,0 +1,109 @@
+2026-01-09T09:05:40.844588+00:00 Ubuntu passwd[843]: password for 'root' changed by 'root'
+2026-01-09T09:05:40.844591+00:00 Ubuntu groupadd[850]: group added to /etc/group: name=gurparsaad, GID=1000
+2026-01-09T09:05:40.844592+00:00 Ubuntu groupadd[850]: group added to /etc/gshadow: name=gurparsaad
+2026-01-09T09:05:40.844595+00:00 Ubuntu groupadd[850]: new group: name=gurparsaad, GID=1000
+2026-01-09T09:05:40.844596+00:00 Ubuntu useradd[856]: new user: name=gurparsaad, UID=1000, GID=1000, home=/home/gurparsaad, shell=/bin/bash, from=none
+2026-01-09T09:05:40.844598+00:00 Ubuntu useradd[856]: add 'gurparsaad' to group 'sudo'
+2026-01-09T09:05:40.844599+00:00 Ubuntu useradd[856]: add 'gurparsaad' to shadow group 'sudo'
+2026-01-09T09:05:40.844600+00:00 Ubuntu passwd[864]: password for 'gurparsaad' changed by 'root'
+2026-01-09T09:05:40.844948+00:00 Ubuntu systemd-logind[892]: New seat seat0.
+2026-01-09T09:05:40.844949+00:00 Ubuntu systemd-logind[892]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-09T09:05:40.844952+00:00 Ubuntu systemd-logind[892]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-09T09:05:40.844954+00:00 Ubuntu systemd-logind[892]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-09T09:05:40.844969+00:00 Ubuntu polkitd[885]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-09T09:05:40.844971+00:00 Ubuntu polkitd[885]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-09T09:05:40.844976+00:00 Ubuntu polkitd[885]: Finished loading, compiling and executing 6 rules
+2026-01-09T09:05:40.844978+00:00 Ubuntu polkitd[885]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-09T09:06:07.599189+00:00 Ubuntu login[973]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-01-09T09:06:07.599423+00:00 Ubuntu login[973]: PAM adding faulty module: pam_lastlog.so
+2026-01-09T09:06:09.490040+00:00 Ubuntu login[973]: pam_unix(login:session): session opened for user gurparsaad(uid=1000) by gurparsaad(uid=0)
+2026-01-09T09:06:09.599998+00:00 Ubuntu systemd-logind[892]: New session 1 of user gurparsaad.
+2026-01-09T09:06:09.665448+00:00 Ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gurparsaad(uid=1000) by gurparsaad(uid=0)
+2026-01-09T09:06:17.442886+00:00 Ubuntu sudo: gurparsaad : TTY=tty1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/apt update
+2026-01-09T09:06:17.443853+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:06:19.773935+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:06:50.482142+00:00 Ubuntu sudo: gurparsaad : TTY=tty1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/apt -y install openssh-server git sqlite3 python3
+2026-01-09T09:06:50.483040+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:06:55.638069+00:00 Ubuntu useradd[1830]: new user: name=sshd, UID=109, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+2026-01-09T09:06:58.898779+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:07:12.389847+00:00 Ubuntu sudo: gurparsaad : TTY=tty1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/systemctl enable --now ssh
+2026-01-09T09:07:12.390386+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:07:13.013016+00:00 Ubuntu sshd[2141]: Server listening on 0.0.0.0 port 22.
+2026-01-09T09:07:13.013092+00:00 Ubuntu sshd[2141]: Server listening on :: port 22.
+2026-01-09T09:07:13.015436+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:09:19.126907+00:00 Ubuntu systemd-logind[655]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-09T09:09:19.126909+00:00 Ubuntu systemd-logind[655]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-09T09:09:19.126911+00:00 Ubuntu systemd-logind[655]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-09T09:09:19.126913+00:00 Ubuntu systemd-logind[655]: New seat seat0.
+2026-01-09T09:09:19.126932+00:00 Ubuntu polkitd[645]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-09T09:09:19.126933+00:00 Ubuntu polkitd[645]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-09T09:09:19.126937+00:00 Ubuntu polkitd[645]: Finished loading, compiling and executing 6 rules
+2026-01-09T09:09:19.126938+00:00 Ubuntu polkitd[645]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-09T09:09:20.711692+00:00 Ubuntu sshd[832]: Server listening on 0.0.0.0 port 22.
+2026-01-09T09:09:20.711801+00:00 Ubuntu sshd[832]: Server listening on :: port 22.
+2026-01-09T09:09:41.689996+00:00 Ubuntu login[838]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-01-09T09:09:41.690127+00:00 Ubuntu login[838]: PAM adding faulty module: pam_lastlog.so
+2026-01-09T09:09:43.101303+00:00 Ubuntu login[838]: pam_unix(login:session): session opened for user gurparsaad(uid=1000) by gurparsaad(uid=0)
+2026-01-09T09:09:43.164927+00:00 Ubuntu systemd-logind[655]: New session 1 of user gurparsaad.
+2026-01-09T09:09:43.300995+00:00 Ubuntu (systemd): pam_unix(systemd-user:session): session opened for user gurparsaad(uid=1000) by gurparsaad(uid=0)
+2026-01-09T09:09:54.268171+00:00 Ubuntu sshd[860]: Accepted password for gurparsaad from 10.0.2.2 port 49204 ssh2
+2026-01-09T09:09:54.275278+00:00 Ubuntu sshd[860]: pam_unix(sshd:session): session opened for user gurparsaad(uid=1000) by gurparsaad(uid=0)
+2026-01-09T09:09:54.288846+00:00 Ubuntu systemd-logind[655]: New session 3 of user gurparsaad.
+2026-01-09T09:15:01.064985+00:00 Ubuntu CRON[1039]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T09:15:01.071140+00:00 Ubuntu CRON[1039]: pam_unix(cron:session): session closed for user root
+2026-01-09T09:17:11.872911+00:00 Ubuntu CRON[1053]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T09:17:11.877673+00:00 Ubuntu CRON[1053]: pam_unix(cron:session): session closed for user root
+2026-01-09T09:19:47.736566+00:00 Ubuntu sshd[1093]: Accepted password for gurparsaad from 10.0.2.2 port 64136 ssh2
+2026-01-09T09:19:47.738309+00:00 Ubuntu sshd[1093]: pam_unix(sshd:session): session opened for user gurparsaad(uid=1000) by gurparsaad(uid=0)
+2026-01-09T09:19:47.741240+00:00 Ubuntu systemd-logind[655]: New session 6 of user gurparsaad.
+2026-01-09T09:19:59.391109+00:00 Ubuntu sudo: gurparsaad : TTY=pts/1 ; PWD=/home/gurparsaad ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+2026-01-09T09:19:59.392437+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:21:19.664319+00:00 Ubuntu sshd[1174]: Invalid user fakeuser from ::1 port 53406
+2026-01-09T09:21:23.186274+00:00 Ubuntu sshd[1174]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:21:23.186342+00:00 Ubuntu sshd[1174]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2026-01-09T09:21:25.772265+00:00 Ubuntu sshd[1174]: Failed password for invalid user fakeuser from ::1 port 53406 ssh2
+2026-01-09T09:21:28.029738+00:00 Ubuntu sshd[1174]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:21:29.888500+00:00 Ubuntu sshd[1174]: Failed password for invalid user fakeuser from ::1 port 53406 ssh2
+2026-01-09T09:21:32.259837+00:00 Ubuntu sshd[1174]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:21:34.702088+00:00 Ubuntu sshd[1174]: Failed password for invalid user fakeuser from ::1 port 53406 ssh2
+2026-01-09T09:21:35.025327+00:00 Ubuntu sshd[1174]: Connection closed by invalid user fakeuser ::1 port 53406 [preauth]
+2026-01-09T09:21:35.025391+00:00 Ubuntu sshd[1174]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2026-01-09T09:21:45.977458+00:00 Ubuntu sshd[1177]: Invalid user fakeuser from ::1 port 47096
+2026-01-09T09:21:47.613447+00:00 Ubuntu sshd[1177]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:21:47.613788+00:00 Ubuntu sshd[1177]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2026-01-09T09:21:49.574501+00:00 Ubuntu sshd[1177]: Failed password for invalid user fakeuser from ::1 port 47096 ssh2
+2026-01-09T09:21:56.698555+00:00 Ubuntu sshd[1177]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:21:58.737543+00:00 Ubuntu sshd[1177]: Failed password for invalid user fakeuser from ::1 port 47096 ssh2
+2026-01-09T09:22:01.194057+00:00 Ubuntu sshd[1177]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:22:03.295333+00:00 Ubuntu sshd[1177]: Failed password for invalid user fakeuser from ::1 port 47096 ssh2
+2026-01-09T09:22:04.943182+00:00 Ubuntu sshd[1177]: Connection closed by invalid user fakeuser ::1 port 47096 [preauth]
+2026-01-09T09:22:04.943326+00:00 Ubuntu sshd[1177]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2026-01-09T09:22:07.815332+00:00 Ubuntu sshd[1180]: Invalid user fakeuser from ::1 port 50552
+2026-01-09T09:22:09.332277+00:00 Ubuntu sshd[1180]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:22:09.332493+00:00 Ubuntu sshd[1180]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2026-01-09T09:22:11.158356+00:00 Ubuntu sshd[1180]: Failed password for invalid user fakeuser from ::1 port 50552 ssh2
+2026-01-09T09:22:13.819764+00:00 Ubuntu sshd[1180]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:22:16.525196+00:00 Ubuntu sshd[1180]: Failed password for invalid user fakeuser from ::1 port 50552 ssh2
+2026-01-09T09:22:17.899337+00:00 Ubuntu sshd[1180]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T09:22:20.190499+00:00 Ubuntu sshd[1180]: Failed password for invalid user fakeuser from ::1 port 50552 ssh2
+2026-01-09T09:22:20.828421+00:00 Ubuntu sshd[1180]: Connection closed by invalid user fakeuser ::1 port 50552 [preauth]
+2026-01-09T09:22:20.828642+00:00 Ubuntu sshd[1180]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=::1 
+2026-01-09T09:25:05.083834+00:00 Ubuntu CRON[1188]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T09:25:05.088057+00:00 Ubuntu CRON[1188]: pam_unix(cron:session): session closed for user root
+2026-01-09T09:25:31.125655+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/sbin/useradd fakeuser
+2026-01-09T09:25:31.133518+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:25:31.162664+00:00 Ubuntu useradd[1194]: new group: name=fakeuser, GID=1001
+2026-01-09T09:25:31.166264+00:00 Ubuntu useradd[1194]: new user: name=fakeuser, UID=1001, GID=1001, home=/home/fakeuser, shell=/bin/sh, from=/dev/pts/3
+2026-01-09T09:25:31.206416+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:25:38.249286+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/passwd fakeuser
+2026-01-09T09:25:38.250029+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
+2026-01-09T09:25:47.223133+00:00 Ubuntu passwd[1203]: pam_unix(passwd:chauthtok): password changed for fakeuser
+2026-01-09T09:25:47.225080+00:00 Ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T09:26:13.606240+00:00 Ubuntu su: pam_unix(su:auth): authentication failure; logname=gurparsaad uid=1000 euid=0 tty=/dev/pts/0 ruser=gurparsaad rhost=  user=fakeuser
+2026-01-09T09:26:17.044660+00:00 Ubuntu su[1204]: FAILED SU (to fakeuser) gurparsaad on pts/0
+2026-01-09T09:26:36.023583+00:00 Ubuntu su: pam_unix(su:auth): authentication failure; logname=gurparsaad uid=1000 euid=0 tty=/dev/pts/0 ruser=gurparsaad rhost=  user=fakeuser
+2026-01-09T09:26:39.298757+00:00 Ubuntu su[1205]: FAILED SU (to fakeuser) gurparsaad on pts/0
+2026-01-09T09:27:29.444563+00:00 Ubuntu sudo: pam_unix(sudo:auth): authentication failure; logname=gurparsaad uid=1000 euid=0 tty=/dev/pts/0 ruser=gurparsaad rhost=  user=gurparsaad
+2026-01-09T09:27:50.815589+00:00 Ubuntu sudo: gurparsaad : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/ls /root
+2026-01-09T09:28:07.635495+00:00 Ubuntu sudo: gurparsaad : TTY=pts/0 ; PWD=/home/gurparsaad/mini-soc-incident-response ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log raw_logs/auth.log
+2026-01-09T09:28:07.636481+00:00 Ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by gurparsaad(uid=1000)
